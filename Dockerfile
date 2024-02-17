@@ -22,4 +22,4 @@ WORKDIR /app/config-server
 COPY --from=builder /app/config-server/build/libs/config-server-0.0.1-SNAPSHOT.jar .
 
 # Задаем команду для запуска приложения
-CMD ["java", "-Dspring.profiles.active=prod", "-jar", "config-server-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "config-server-0.0.1-SNAPSHOT.jar"]
