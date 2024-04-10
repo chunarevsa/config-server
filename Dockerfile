@@ -10,7 +10,7 @@ COPY settings.gradle .
 COPY src src
 
 # Собираем проект
-RUN gradle build --no-daemon --exclude-task test
+RUN gradle build --no-daemon
 
 # Используем минимальный образ с JRE
 FROM openjdk:11-jre-slim
